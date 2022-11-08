@@ -6,7 +6,7 @@ import { Box } from './Box/Box.styled';
 import { ContactForm } from './Form/Form';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
-
+import { nanoid } from 'nanoid';
 
 export class App extends Component {
   state = {
