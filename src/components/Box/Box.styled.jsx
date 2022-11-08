@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { system } from 'styled-system';
+
+
 import {
   border,
   color,
@@ -19,6 +21,15 @@ export const Box = styled('div')(
   space,
   typography,
   system({
-    borderCollapse: true,
+    transition: {
+      property: 'transition',
+      scale: 'transitions',
+      transform(value, scale) {
+        const values = value.split(' ');
+        const valueFromTheme = scale[values[1]];
+
+        return valueFromTheme ? `${values[0]} ${valueFromTheme}` : '';
+      },
+    },
   })
 );
