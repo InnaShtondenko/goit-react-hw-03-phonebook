@@ -131,7 +131,7 @@ export class App extends Component {
           borderRadius="small"
           boxShadow="medium"
         >
-          <Box margin="0 auto" color="textColored">
+          <Box margin="0 auto" color="textColor">
             <h1>Phonebook</h1>
             <ContactForm onSubmitCallback={onContactAdd} />
 
@@ -140,7 +140,7 @@ export class App extends Component {
               margin="0 auto"
               mt={[4]}
               borderColor="accentSecondary"
-              color="textColoredSecondary"
+              color="textColorSecondary"
             >
               <h2>Contacts</h2>
               <Filter value={filter} onInputCallback={onContactsFiltering} />
